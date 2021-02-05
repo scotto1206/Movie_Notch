@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Example of Nesting Flexbox and Grid | Jen Simmons</title>
+    <link rel="stylesheet" href="flexbox.css">
+  </head>
+  
+  <body>
+    <nav id="nav_bar">
+            <div class="container">
+                <img src="green-white-logo.png" alt="Movie Notch Logo" class="logo">
+            
+                <ul id="links" class="links">
+                    <li id="coming_soon" class="coming_soon">
+                        <a href="comingsoon.html"> Coming Soon!</a>
+                    </li>
+                    <li id="reviews" class="reviews">
+                        <a href="reviews.html"> Reviews</a>
+                    </li>
+                    <li id="videos" class="videos">
+                        <a href="videos.html"> Videos</a>
+                    </li>
+                    <li id="podcast" class="podcast">
+                        <a href="podcasts.html"> Podcasts</a>
+                    </li>
+                    <li id="contributors" class="contributors">
+                        <a href="contributors.html"> Contributors</a>
+                            <!--<span class="writers"></span>
+                                <ul class="writer dropdown">
+                                    <li>Scott Lynn</li>
+                                    <li>Mat Clark</li>
+                                    <li>Guest Starring</li>
+                                </ul>-->
+                    </li>
+                </ul>
+
+                <div class="social_links">
+                    <a href="#" class="fa fa-youtube"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                </div>
+            </div>
+    </nav>
+	
+//above here is the new stuff
+
+<main class = "topbox">
+	<article class="sale-item" id = "headline">
+		<h1>Mortal Kombat 2021</h1>
+		<p>It's been almost a quarter of a century since Mortal Kombat fans were graced with the displeasure of the last Mortal Kombat film, and more than a decade since Kevin Tancharoen reinvigorated those fans with the lure of his horror-themed short Mortal Kombat: Rebirth. Alas, the long wait is nearly over as...</p>
+		<img class = "pic2" src="Subzero.jpg"
+			alt="You get: a dot-matrix printer.">
+		<span class = "author"> Mat Clark</span>
+	</article>
+</main>
+<main class="deals">
+	
+  <a href = "https://www.outkick.com">
+	<article class="sale-item">
+		<h1>HPC does it again!</h1>
+		<p>"He may bench 225, but he got chicken legs. Come get with a real man!"</p>
+		<img class = "pic2" src="HPC.jpg" alt="You get: a white computer with matching peripherals">
+		<span class = "author"> Mat Clark</span>
+	</article>
+  </a>
+  
+  <article class="sale-item">
+    <h1>Epic Christmas Break Parties</h1>
+    <p>"I don't fall."</p>
+    <img class = "pic2" src="scotty christmas party.jpg"
+         alt="You get: a dot-matrix printer."/>
+  </article>
+
+  <article class="sale-item">
+    <h1>Bromigos Reunite</h1>
+    <p>"Best Friends Forever bracelets"</p>
+    <img class = "pic" src="bromance.png"
+         alt="You get: a dot-matrix printer.">
+  </article>
+
+  <article class="sale-item">
+    <h1>State Champs!</h1>
+    <p>Mat Clark and Scotty "too hottie" Lynn become first state champions for AHS in 4 years</p>
+    <img class = "pic2" src="state champs.jpg"
+         alt="You get: a dot-matrix printer.">
+  </article>
+
+  <article class="sale-item">
+    <h1>Top 10 movies from the 90s </h1>
+    <p>Maybe the overwhelming sense of nostalgia skews our opinion, but these movies...</p>
+    <img class = "pic" src="Mario.jpg"
+         alt="You get: a white computer with matching peripherals.">
+    <button>See The Album!</button>
+  </article>
+  
+  <article class="sale-item">
+    <h1>Lift Weights, Get Money </h1>
+    <p>Lifestyle of our early 20s.</p>
+    <img class = "pic2" src="swoll patrol.jpg"
+         alt="You get: a white computer with matching peripherals.">
+  </article>
+</main>
