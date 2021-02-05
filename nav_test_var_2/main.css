@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+
+/* LOWER NAV CONTAINER*/
+* {
+    margin: 0px;
+}
+
+body {
+    font-family: 'Montserrat'; 
+}
+
+header {
+    background-color: #353535;
+}
+
+.logo_container {
+    background-color: whitesmoke;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding:20px;
+}
+
+/*.links_container {
+}*/
+
+footer {
+    background-color: #353535;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+}
+
+.contact a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.contact a:hover {
+    color: forestgreen;
+    border: forestgreen;
+    background-color: whitesmoke;
+}
+
+.social_links {
+    display: flex;
+    justify-content: center;
+}
+
+.social_links a {
+    margin: 10px 20px;
+    font-size: 20px;
+    color: whitesmoke;
+    padding: 10px 10px;
+    border: 1px solid whitesmoke;
+    border-radius: 50%;
+}
+
+/*.social_links a:hover {
+    color: forestgreen;
+    border: forestgreen;
+}
+---don't know if i like the green hover*/
+
+.links {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.links li {
+    display: inline;
+    padding: 10px 20px;
+}
+
+.links_container a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.links_container a:hover {
+    color: forestgreen;
+    border: forestgreen;
+    background-color: whitesmoke;
+}
+
