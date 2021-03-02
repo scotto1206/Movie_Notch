@@ -1,0 +1,83 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 3rem;
+    background-color: grey;
+    font-size: 1.25rem;
+    line-height: 1.3;
+}
+
+a {
+    text-decoration: none;
+    width: 758px;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 365px repeat(2, 1fr);
+    grid-template-rows: 1fr auto;
+    background: white;
+    color: black;
+    margin: 15px;
+    height: 205px;
+    width: 758px;
+}
+
+.card .card__image {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    
+}
+
+.card .card__content {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+    padding: 1rem;
+}
+
+.card .card__title {
+    display: inline-block;
+    font-size: 1.85rem;
+    line-height: 1.1;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.card .card__content {
+    margin: auto;
+}
+
+.card .card__author {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    font-size: 1.2rem;
+    line-height: 1;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+.card .card__date {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    font-size: 1.2rem;
+    line-height: 1;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    justify-self: end;
+}
