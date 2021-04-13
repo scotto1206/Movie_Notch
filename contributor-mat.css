@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+:root {
+    --time: 0.15s;
+}    
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Montserrat'; 
+    font-size: 10px;
+    background-image: url(/assets/lloyd-dirks-4SLz_RCk6kQ-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    background-size: cover;
+}
+
+/*Nav css goes here*/
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    width: 100%;
+    position: absolute;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+#navbar {
+    width: 100%;
+    max-width: 117rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+
+}
+
+.menu-icons {
+    color:rgba(255, 166, 0, 0.863);
+    font-size: 4rem;
+    position: absolute;
+    margin-top: 50%;
+    margin-right: 2rem;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 100;
+    display: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 6rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.247);
+
+}
+
+.logo {
+    width: 5rem;
+    height: 5rem;
+    background-color: #142427;
+    display: flex;
+    border-radius: 100%;
+    margin-right: 0;
+}
+
+.nav-list {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-left: -80px;
+}
+
+.nav-list li {
+    line-height: 6rem;
+    position: relative;
+}
+
+.sub-menu li {
+    line-height: 3rem;
+}
+
+.nav-list a {
+    display: block;
+    color:rgba(255, 166, 0, 0.863);
+    padding: 0 1.5rem;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    /*transition: color 650ms;*/
+}
+
+.nav-list a:hover {
+    color:rgb(255, 166, 0);
+}
+
+.sub-menu {
+    width: 14rem;
+    display: block;
+    position: absolute;
+    border-top: 2px solid rgba(255, 166, 0, 0.863);
+    background-color: transparent;
+    z-index: 100;
+    margin-top: -2rem;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.sub-menu::before {
+    content: '';
+    position: absolute;
+    top: -2.0rem;
+    left: 1.5rem;
+    border: 1.0rem solid transparent;
+    border-bottom-color: rgba(255, 166, 0, 0.863);
+}
+
+.nav-list li:hover > .sub-menu {
+    top: 8rem;
+    opacity: 1;
+    visibility: visible;
+
+}
+/*END NAV*/
+
+/*BEGIN MAIN*/
+main {
+    padding-top: 8rem;
+}
+
+.bio-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #171717;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.info-container h1{
+    font-size: 2.125rem;
+    color: whitesmoke;
+    padding-bottom: 1rem;
+}
+
+.info-container h4 {
+    font-size: 1.25rem;
+    color: whitesmoke;
+    padding-bottom: 2rem;
+}
+
+.info-container {
+    padding: 2rem;
+    text-align: left;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 20px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa-twitter {
+    background: rgba(255, 166, 0, 0.863);
+    color: whitesmoke;
+  }
+
+.img-container img {
+    float: right;
+}
+/*END BIO SECTION*/
+
+/*BEGIN ARTICLE BLOCK*/
+
+section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 4rem;
+}
+section h1{
+    font-size:2.125rem;
+    color: whitesmoke;
+    padding-bottom: 2rem;
+}
+
+.article-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 4rem;
+}
+
+article img {
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    flex-flow: column;
+    border: 1px solid #bfbfbf;
+    border-radius: 0;
+    padding: .5rem;
+    background-color: rgb(17, 17, 17);
+    color: whitesmoke;
+  }
+
+.article-text h3 {
+    padding-bottom: 2rem;
+}
+.article-title {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1.5rem;
+}
+
+.article-exerpt, 
+.article-exerpt a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    padding-bottom: 2rem;
+}
