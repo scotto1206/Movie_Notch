@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+:root {
+    --time: 0.15s;
+}    
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Montserrat'; 
+    font-size: 10px;
+    background-image: url(/assets/lloyd-dirks-4SLz_RCk6kQ-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    background-size: cover;
+}
+
+/*NAV CSS*/
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    width: 100%;
+    position: absolute;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+#navbar {
+    width: 100%;
+    max-width: 117rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+
+}
+
+.menu-icons {
+    color:rgba(255, 166, 0, 0.863);
+    font-size: 4rem;
+    position: absolute;
+    margin-top: 50%;
+    margin-right: 2rem;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 100;
+    display: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 6rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.247);
+}
+
+.logo {
+    width: 5rem;
+    height: 5rem;
+    background-color: #142427;
+    display: flex;
+    border-radius: 100%;
+    margin-right: 0;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.nav-list {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-left: -80px;
+}
+
+.nav-list li {
+    line-height: 6rem;
+    position: relative;
+}
+
+.sub-menu li {
+    line-height: 3rem;
+}
+
+.nav-list a {
+    display: block;
+    color:rgba(255, 166, 0, 0.863);
+    padding: 0 1.5rem;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.nav-list a:hover {
+    color:rgb(255, 166, 0);
+}
+
+.sub-menu {
+    width: 14rem;
+    display: block;
+    position: absolute;
+    border-top: 2px solid rgba(255, 166, 0, 0.863);
+    background-color: #171717;
+    z-index: 100;
+    margin-top: -2rem;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.sub-menu::before {
+    content: '';
+    position: absolute;
+    top: -2.0rem;
+    left: 1.5rem;
+    border: 1.0rem solid transparent;
+    border-bottom-color: rgba(255, 166, 0, 0.863);
+}
+
+.nav-list li:hover > .sub-menu {
+    top: 8rem;
+    opacity: 1;
+    visibility: visible;
+
+}
+/*END NAV*/
+
+/*MAIN CSS*/
+/* main {
+    margin: 0 auto 0 auto;
+}
+
+section {
+    margin: 0;
+    padding: 8rem 3rem 3rem 3rem;
+    font-size: 1.25rem;
+    line-height: 1.3;
+}
+
+section a {
+    text-decoration: none;
+    width: 758px;
+}
+
+.list h2 {
+    color: whitesmoke;
+    text-shadow: 2px 2px rgba(255, 166, 0, 0.863);
+    margin: auto;
+    text-align: left;
+    font-size: 2.125rem;
+    width: 758px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 365px 1fr 1fr;
+    grid-template-rows: 85px 85px 35px;
+    gap: 0px 0px;
+    grid-template-areas:
+      "image main-title main-title"
+      "image sub-title sub-title"
+      "image author date";
+    border: 1px solid #bfbfbf;
+    background: rgb(27, 27, 27);
+    color: whitesmoke;
+    margin: 15px auto 15px auto;
+    height: 207px;
+    width: 758px;
+}
+
+.grid-container .image {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    grid-area: image;
+}
+
+.grid-container .main-title {
+    display: flex;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: left;
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    grid-area: main-title;
+}
+
+.grid-container .sub-title {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: left;
+    grid-area: sub-title;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.grid-container .author {
+    grid-area: author;
+    font-size: 1.2rem;
+    line-height: 1;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+.grid-container .date {
+    grid-area: date;
+    font-size: 1.2rem;
+    line-height: 1;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    justify-self: end;
+} */
+
+/*SMALL CARDS*/
+/* .deals {
+    margin: 0 auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1.5rem;
+}
+
+.sale-item { 
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 208px 1fr 1fr 16px;
+    grid-template-areas:
+        "image"
+        "main-title"
+        "sub-title"
+        "author";
+    grid-column-gap: 2rem;
+    margin: 0;
+    font-family: 'Montserrat', san-serif; 
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem 0 0.5rem;
+    border: 1px solid #bfbfbf;
+    background-color: #171717;
+    color: whitesmoke;
+    width: 218px;
+}
+
+section {
+    padding-bottom: 3rem;
+}
+  
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.sale-item .main-title {
+    grid-area: main-title;
+    padding: 0 8px 0 8px;
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.sale-item .sub-title {
+    grid-area: sub-title;
+    padding: 0 8px 12px 8px;
+    font-size: 1.rem;
+}
+
+.sale-item .sub-title h1 {
+    font-size: 1rem;
+}
+
+.sale-item .image {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}
+ 
+.sale-item .author {
+    grid-area: author;
+    color: whitesmoke;
+    font: 400 .75rem roboto condensed,Arial,sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-bottom: 6px;
+} */
+/* END MAIN CSS */
+
+/*secondary cards option*/
+section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 8rem;
+  }
+  section h1{
+    font-size:2.125rem;
+    color: whitesmoke;
+    padding-bottom: 2rem;
+  }
+  
+  .article-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 4rem;
+  }
+  
+  article img {
+    width: 100%;
+  }
+  
+  .card {
+    display: flex;
+    flex-flow: column;
+    border: 1px solid #bfbfbf;
+    border-radius: 0;
+    padding: .5rem;
+    background-color: rgb(17, 17, 17);
+    color: whitesmoke;
+  }
+  
+  .article-text h3 {
+    padding-bottom: 2rem;
+  }
+  .article-title {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1.5rem;
+  }
+  
+  .article-exerpt, 
+  .article-exerpt a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    padding-bottom: 2rem;
+  }
