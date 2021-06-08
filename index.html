@@ -3,56 +3,147 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/css/main.css">
-        <title>Movie Notch</title>
+        <link href="/dist/css/styles.css" rel="stylesheet" type="text/css" />
+        <link href="https:unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>index</title>
     </head>
     <body>
-        <header>
-            <a class="logo" href="https://fontmeme.com/daft-punk-font/"><img src="https://fontmeme.com/permalink/210110/f27d31070961cdbbf75c46cf1419649b.png" alt="daft-punk-font" border="0"></a>
-            <nav>
-                <ul class="nav_links">
-                    <li><a href="news.html">News</a></li>
-                    <li><a href="reviews.html">Reviews</a></li>
-                    <li><a href="videos.html">Videos</a></li>
-                    <li><a href="podcast.html">Podcast</a></li>
-                </ul>
-            </nav> 
-            <a class="cta" href="#"><button>Shop</button></a>
-        </header>   
-        <hr>
+        <header class="header">
+            <div class="overlay has-fade"></div>
+        
+            <nav class="container container--pall flex flex-jc-sb flex-ai-c">
+                <a href="/" class="header__logo">
+                  <img src="/assets/testsvg1.svg" alt="Movie Notch" />
+                </a>
+        
+                <a id="btnHamburger" href="#" class="header__toggle hide-for-desktop">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </a>
+        
+                <div class="header__links hide-for-mobile">
+                  <a href="#">Features</a><a href="#">Reviews</a><a href="#">Videos</a><a href="#">Podcast</a><a href="#">Contributors</a>
+                </div>
+        
+                <a href="#" class="button header__cta hide-for-mobile">Subscribe</a>
+            </nav>
+        
+            <div class="header__menu has-fade">
+              <a href="">Features</a>
+              <a href="">Reviews</a>
+              <a href="">Videos</a>
+              <a href="">Podcast</a>
+              <a href="">Contributors</a>
+            </div>
+        
+        </header>
+        <section class="hero">
+            <div class="hero__container">
+                <div class="hero__image">
+                    <img src="/assets/Animated Hipster Logo Badge for Outdoor Apparel, Retail Stores, & Adventure Guides.svg" alt="">
+                </div>
+                
+                <div class="hero__text container--pall">
+                  <h2>
+                    An unfiltered take on current Hollywood films and a nostalgic looks back at the movies that shaped our youth. 
+                  </h2>
+                  <!-- <h3>All brought to you by a couple 90's kids.</h3> -->
+                </div>
+            </div>
+        </section>
 
-        <main>
-            <article id="newsfeature1">
-                <h2>News Feature #1</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.     Placeat impedit, eum tempore delectus reiciendis ratione. Veritatis eligendi totam ratione. Maiores veniam, voluptate iure accusantium a soluta velit. At, incidunt ipsa.
-                </p>
-                <hr>
-            </article>
-            <article id="reviewsfeature1">
-                <h2>Reviews Feature #1</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.     Placeat impedit, eum tempore delectus reiciendis ratione. Veritatis eligendi totam ratione. Maiores veniam, voluptate iure accusantium a soluta velit. At, incidunt ipsa.
-                </p>
-                <hr>
-            </article>        
-            <article id="videosfeature1">
-                <h2>Videos Feature #1</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.     Placeat impedit, eum tempore delectus reiciendis ratione. Veritatis eligendi totam ratione. Maiores veniam, voluptate iure accusantium a soluta velit. At, incidunt ipsa.
-                </p>
-                <hr>
-            </article>        
-            <article id="podcastfeature1">
-                <h2>Podcast Feature #1</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.     Placeat impedit, eum tempore delectus reiciendis ratione. Veritatis eligendi totam ratione. Maiores veniam, voluptate iure accusantium a soluta velit. At, incidunt ipsa.
-                </p>
-                <hr>
-            </article>
-        </main>
-        <footer>
-            <ul class="footer_links">
-                <li><a href="#">Social Media</a></li>
-                <li><a href="#">Copyright 2021</a></li>
-                <li><a href="#">The Crew</a></li>
-            </ul>
-        </footer>
+        <div class="card-showcase">
+            <!-- <div class="article-container">
+                <article class="article-item-1">
+                    <div class="card">
+                        <a href="/scott-pieces/space-jam-2-childhood-hype-or-adult-letdown.html">
+                            <div>
+                                <img src="/assets/bugs_lebron.jpg" alt="Lebron and Bugs Bunny">
+                            </div>
+                        </a>
+                        <div class="article-text">
+                            <h3>
+                                <a class="article-title" href="/scott-pieces/space-jam-2-childhood-hype-or-adult-letdown.html">Space Jam 2: Childhood Hype or Adult LeTdown</a>
+                            </h3>
+                            <div class="article-exerpt">
+                                <p>
+                                    LeBron james is more known for his sick dunks than his crossover. Will he be able to pull off the greatest sports film crossover of 2021?...
+                                    <a href="/scott-pieces/space-jam-2-childhood-hype-or-adult-letdown.html">READ MORE</a>
+                                </p>
+                            </div>
+                            <div class="article-meta">
+                                <span>Feb 22, 2021</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div> -->
+
+                <div class="card">
+                    <div class="card-header">
+                        <img src="/assets/bugs_lebron.jpg" alt="Lebron and Bugs Bunny">
+                    </div>
+                    <div class="card-body">
+                        <span class="tag tag-pink">Feature</span>
+                        <h4>Space Jam 2: Childhood Hype or Adult LeTdown</h4>
+                        <p>
+                            LeBron james is more known for his sick dunks than his crossover. Will he be able to pull off the greatest sports film crossover of 2021?...
+                            <a href="/scott-pieces/space-jam-2-childhood-hype-or-adult-letdown.html">READ MORE</a>
+                        </p>
+                        <div class="user">
+                            <img src="/assets/scott-profile.jpeg" alt="#">
+                            <div class="user-info">
+                                <h5>Scott Lynn</h5>
+                                <small>Feb 22, 2021</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <img src="/assets/bugs_lebron.jpg" alt="Lebron and Bugs Bunny">
+                    </div>
+                    <div class="card-body">
+                        <span class="tag tag-pink">Feature</span>
+                        <h4>Space Jam 2: Childhood Hype or Adult LeTdown</h4>
+                        <p>
+                            LeBron james is more known for his sick dunks than his crossover. Will he be able to pull off the greatest sports film crossover of 2021?...
+                            <a href="/scott-pieces/space-jam-2-childhood-hype-or-adult-letdown.html">READ MORE</a>
+                        </p>
+                        <div class="user">
+                            <img src="/assets/scott-profile.jpeg" alt="#">
+                            <div class="user-info">
+                                <h5>Scott Lynn</h5>
+                                <small>Feb 22, 2021</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <img src="/assets/bugs_lebron.jpg" alt="Lebron and Bugs Bunny">
+                    </div>
+                    <div class="card-body">
+                        <span class="tag tag-pink">Feature</span>
+                        <h4>Space Jam 2: Childhood Hype or Adult LeTdown</h4>
+                        <p>
+                            LeBron james is more known for his sick dunks than his crossover. Will he be able to pull off the greatest sports film crossover of 2021?...
+                            <a href="/scott-pieces/space-jam-2-childhood-hype-or-adult-letdown.html">READ MORE</a>
+                        </p>
+                        <div class="user">
+                            <img src="/assets/scott-profile.jpeg" alt="#">
+                            <div class="user-info">
+                                <h5>Scott Lynn</h5>
+                                <small>Feb 22, 2021</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </section>
+        <script src="/js/script.js"></script>
     </body>
 </html>
