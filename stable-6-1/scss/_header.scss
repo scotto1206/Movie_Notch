@@ -1,0 +1,229 @@
+/*NAV CSS*/
+// a {
+//     text-decoration: none;
+// }
+
+// ul {
+//     list-style: none;
+// }
+
+// header {
+//     width: 100%;
+//     position: absolute;
+//     margin-top: 0;
+//     margin-left: 0;
+// }
+
+// #navbar {
+//     width: 100%;
+//     max-width: 117rem;
+//     margin: 0 auto;
+//     padding: 0 1.5rem;
+
+// }
+
+// .menu-icons {
+//     color:rgba(255, 166, 0, 0.863);
+//     font-size: 4rem;
+//     position: absolute;
+//     margin-top: 50%;
+//     margin-right: 2rem;
+//     transform: translateY(-50%);
+//     cursor: pointer;
+//     z-index: 100;
+//     display: none;
+// }
+
+// nav {
+//     display: flex;
+//     align-items: center;
+//     width: 100%;
+//     height: 6rem;
+//     border-bottom: 1px solid rgba(255, 255, 255, 0.247);
+// }
+
+// .logo {
+//     width: 5rem;
+//     height: 5rem;
+//     background-color: #142427;
+//     display: flex;
+//     border-radius: 100%;
+//     margin-right: 0;
+//     cursor: pointer;
+//     z-index: 100;
+// }
+
+// .nav-list {
+//     display: flex;
+//     width: 100%;
+//     align-items: center;
+//     justify-content: center;
+//     margin-left: -80px;
+// }
+
+// .nav-list li {
+//     line-height: 6rem;
+//     position: relative;
+// }
+
+// .sub-menu li {
+//     line-height: 3rem;
+// }
+
+// .nav-list a {
+//     display: block;
+//     color:rgba(255, 166, 0, 0.863);
+//     padding: 0 1.5rem;
+//     font-size: 1.4rem;
+//     text-transform: uppercase;
+// }
+
+// .nav-list a:hover {
+//     color:rgb(255, 166, 0);
+// }
+
+// .sub-menu {
+//     width: 14rem;
+//     display: block;
+//     position: absolute;
+//     border-top: 2px solid rgba(255, 166, 0, 0.863);
+//     background-color: #171717;
+//     z-index: 100;
+//     margin-top: -2rem;
+//     opacity: 0;
+//     visibility: hidden;
+// }
+
+// .sub-menu::before {
+//     content: '';
+//     position: absolute;
+//     top: -2.0rem;
+//     left: 1.5rem;
+//     border: 1.0rem solid transparent;
+//     border-bottom-color: rgba(255, 166, 0, 0.863);
+// }
+
+// .nav-list li:hover > .sub-menu {
+//     top: 8rem;
+//     opacity: 1;
+//     visibility: visible;
+
+// }
+/*END NAV*/
+
+.header {
+    position: relative;
+    z-index: 1;
+  
+    // Hamburger Open Styles
+    &.open {
+  
+      .header__toggle {
+        > span:first-child {
+          transform: rotate(45deg);
+        }
+        
+        > span:nth-child(2) {
+          opacity: 0;
+        }
+        
+        > span:last-child {
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  
+    .overlay {
+      opacity: 0;
+      position: fixed;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      background-image: linear-gradient($veryLightGrey, transparent);
+    }
+  
+    nav {
+      position: relative;
+      background-color: $darkBlue;
+      padding-top: 1.0625rem;
+      padding-bottom: 1.0625rem;
+    }
+  
+    &__logo {
+  
+      img {
+        width: 8.8125rem;
+        height: 1.375rem;
+      }
+  
+    }
+  
+    &__toggle { // Mobile Menu Toggle
+  
+      > span {
+        display: block;
+        width: 26px;
+        height: 2px;
+        background-color: $vividOrange;
+        transition: all 300ms ease-in-out;
+        transform-origin: 3px 1px;
+  
+        &:not(:last-child){
+          margin-bottom: 5px;
+        }
+      }
+    }
+  
+    &__menu {
+      position: absolute;
+      width: calc(100% - 3rem);
+      left: 50%;
+      transform: translateX(-50%);
+      background: $darkBlue;
+      margin-top: 1.5rem;
+      padding: 1.625rem;
+      border-radius: 5px;
+  
+      a {
+        display: block;
+        padding: 0.625rem;
+        color: $veryLightGrey;
+        text-align: center;
+      }
+    }
+  
+    &__links {
+  
+      a {
+        position: relative;
+        font-size: $font-sm;
+        color: $veryLightGrey;
+        transition: color 300ms ease-in-out;
+  
+        &:not(:last-child){
+          margin-right: 32px;
+        }
+  
+        &::before {
+          content: "";
+          display: block;
+          position: absolute;
+          height: 5px;
+          left: 0;
+          right: 0;
+          bottom: -30px;
+          background: linear-gradient(to right, $vividOrange, $darkBlue);
+          opacity: 0;
+          transition: opacity 300ms ease-in-out;
+        }
+        &:hover {
+          color: $white;
+  
+          &::before {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
