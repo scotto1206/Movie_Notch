@@ -1,5 +1,7 @@
 # Movie_Notch
 
+www.movienotch.com
+
 Project webiste for movie review and news. Currently under development.
 
 Self-tought coder initial site was built out with HTML/CSS. 
