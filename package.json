@@ -18,18 +18,23 @@
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
     "babel-plugin-styled-components": "^2.0.7",
+    "dotenv": "^16.0.0",
     "gatsby": "^4.12.1",
     "gatsby-plugin-image": "^2.12.1",
     "gatsby-plugin-mdx": "^3.12.1",
+    "gatsby-plugin-postcss": "^5.12.1",
     "gatsby-plugin-react-helmet": "^5.12.1",
     "gatsby-plugin-sharp": "^4.12.1",
     "gatsby-plugin-styled-components": "^5.12.1",
     "gatsby-source-contentful": "^7.10.1",
     "gatsby-source-filesystem": "^4.12.1",
+    "gatsby-source-graphcms": "^2.8.0",
     "gatsby-transformer-sharp": "^4.12.1",
+    "postcss": "^8.4.12",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
-    "styled-components": "^5.3.5"
+    "styled-components": "^5.3.5",
+    "tailwindcss": "^3.0.24"
   }
 }
